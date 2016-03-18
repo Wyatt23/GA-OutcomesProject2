@@ -1,2 +1,2 @@
-== README
-Welcome to the new Outcomes Roadmap for General Assembly! 
+README
+Welcome to the new Outcomes Roadmap for General Assembly!
