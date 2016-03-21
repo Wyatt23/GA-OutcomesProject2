@@ -1,6 +1,6 @@
-class CreateBrandStatements < ActiveRecord::Migration
+class CreateBrands < ActiveRecord::Migration
   def change
-    create_table :brand_statements do |t|
+    create_table :brands do |t|
       t.text :body
       t.timestamps null: false
       t.references :student, index: true, foreign_key: true
