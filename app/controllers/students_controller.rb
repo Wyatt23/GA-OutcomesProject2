@@ -1,5 +1,10 @@
 class StudentsController < ApplicationController
 
+  def fullname
+    @student = Student.puts
+  "#{first_name} #{last_name}"
+  end
+
   def index
     @students = Student.order(:last_name)
   end

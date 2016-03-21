@@ -1,0 +1,8 @@
+<% @brands.each do |brand| %>
+<p><%= student.fullname%></p>
+<p><%= brand.updated_at%></p>
+<div>
+  <p><%= brand.body%></p>
+  <p><%= link_to"Edit Brand Statement",edit_brand_path,%></p>
+</div>
+<% end %>

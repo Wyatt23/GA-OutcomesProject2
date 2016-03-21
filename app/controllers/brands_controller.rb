@@ -2,7 +2,7 @@ class BrandsController < ApplicationController
 
   def index
     @brands = Brand.all.reverse
-    # may change, depends - could use Brand.last for last one not sure 
+    # may change, depends - could use Brand.last for last one not sure
   end
 
   def new
@@ -11,7 +11,7 @@ class BrandsController < ApplicationController
 
   def create
     @brand = Brand.create(brand_params)
-    redirect_to brands_path
+    redirect_to students_path
   end
 
   def show
