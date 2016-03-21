@@ -1,5 +1,10 @@
-  <div class="enroll_button"><%=link_to"Enroll New Student!",new_student_path%> </div>
+<div class="studentContainer"
+
+<div class="enroll_button">
+  <%=link_to"Enroll New Student!",new_student_path%>
+</div>
 
 <% @students.group_by do |student| %>
   <p class="student_name"><%=link_to "#{student.first_name} #{student.last_name}",student_path(student)%>, <%=student.ga_focus%><%=student.cohort_number%></p>
 <% end %>
+</div>
