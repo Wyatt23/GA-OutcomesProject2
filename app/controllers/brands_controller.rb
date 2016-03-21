@@ -5,32 +5,39 @@ class BrandsController < ApplicationController
   end
 
   def new
-    @brand = Brand.new
+    @student = Student.find(params[:student_id])
+    @brand = @student.brands.new
   end
 
   def create
-    @brand = Brand.create!(brand_params)
-    redirect_to brands_path(@brands)
+    @student = Student.find(params[:student_id])
+    @brand = @student.brands.create!(brand_params)
+    redirect_to student_brand_path(@student,@brand)
   end
 
   def show
-    @brand = Brand.find(params[:student_id])
+    @student = Student.find(params[:student_id])
+    @brand = @student.brands.find(params[:id])
   end
 
   def edit
-    @brand = Brand.find(params[:student_id])
+    @student = Student.find(params[:student_id])
+    @brand = @student.brands.find(params[:id])
   end
 
   def update
-    @brand = Brand.find(params[:student_id])
+    @student = Student.find(params[:student_id])
+    @brand = @student.brands.find(params[:id])
     @brand.update(brand_params)
-    redirect_to brands_path(@brand)
+    redirect_to student_brand_path(@student,@brand)
   end
 
   def destroy
-    @brand = Brand.find(params[:id])
+    @student = Student.find(params[:student_id])
+    @brand = @student.brands.find(params[:id])
     @brand.destroy
-    redirect_to brands_path
+    
+    redirect_to student_brand_path(@student,@brand)
   end
 
   private
