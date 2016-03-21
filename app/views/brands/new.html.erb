@@ -1,10 +1,2 @@
-<h1>Create a new brand statement!</h1>
-<%= form_for @brand, html: {class:"brand_form"} do |f| %>
-
-<div>
-  <%= f.label :New_Statement,:class => "brandLabel"%>
-  <%= f.text_area :body, :class => "brandTextArea"%>
-</div>
-
-  <%= f.submit "Create a new brand", :class => "brand_submit_button"%>
-<%end%>
+<h1>New Brand Statement</h1>
+<%= render "brandForm" %> 

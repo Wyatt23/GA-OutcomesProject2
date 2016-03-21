@@ -1,8 +1,7 @@
 class BrandsController < ApplicationController
 
   def index
-    @brands = Brand.all.reverse
-    # may change, depends - could use Brand.last for last one not sure
+    @brands = Brand.all
   end
 
   def new
@@ -10,8 +9,8 @@ class BrandsController < ApplicationController
   end
 
   def create
-    @brand = Brand.create(brand_params)
-    redirect_to students_path
+    @brand = Brand.create!(brand_params)
+    redirect_to brands_path(@brands)
   end
 
   def show
@@ -20,13 +19,12 @@ class BrandsController < ApplicationController
 
   def edit
     @brand = Brand.find(params[:id])
-    redirect_to brands_path
   end
 
   def update
     @brand = Brand.find(params[:id])
     @brand.update(brand_params)
-    redirect_to brands_path
+    redirect_to brands_path(@brand)
   end
 
   def destroy

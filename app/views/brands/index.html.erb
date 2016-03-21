@@ -1,5 +1,12 @@
 
 <h1>Brands Index Page</h1>
+  <div>
+    <%= @brands.each do |brand|%>
+    <p>Last updated by:<%=student.fullname%>at<%=brand.updated_at%></p>
+    <p><%=brand.body%></p>
+  </div>
+<%end%>
+
 
 
 <%= render partial: "students/whatevs", locals: {name: "Adrian"} %>
