@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
 
   def index
-    @students = Student.all
+    @students = Student.order(:last_name)
   end
 
   def new
@@ -11,6 +11,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.create(student_params)
+    redirect_to students_path
   end
 
   def show
@@ -28,13 +29,13 @@ class StudentsController < ApplicationController
 
   def destroy
     @student = Student.find(params[:id])
-    @artist.destroy
+    @student.destroy
     redirect_to students_path
   end
 
   private
     def student_params
-      params.require (:student).permit(:first_name, :last_name, :ga_focus, :cohort_number)
+      params.require(:student).permit(:first_name, :last_name, :ga_focus, :cohort_number)
     end
 
 end

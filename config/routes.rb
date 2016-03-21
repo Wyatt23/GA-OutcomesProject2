@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-    root "welcome#index"
+    root "students#index"
 
     resources :students, :brand_statements, :companies
 
