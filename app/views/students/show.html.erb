@@ -1,8 +1,15 @@
 <h1>Welcome to your personal outcomes channel, <%= @student.first_name%>!</h1>
 
 <p>As of today, your brand statement looks like this:</p>
-<p><%=link_to"See Brand Statement",brand_path%></p>
-<p class="write_new"><%= link_to"Write New Brand Statement",new_brand_path,:class => "newBrandButton"%></p>
+<p>
+  <% last_brand_statement = @student.brands.last %>
+  <% if last_brand_statement %>
+    <%= link_to "See Brand Statement", student_brand_path(@student,last_brand_statement) %>
+  <% else %>
+    <%= link_to "Create your first Brand Statement", new_student_brand_path(@student) %>
+  <% end %>
+</p>
+
 
 
 <p>Here are the companies you are currently interested in:</p>

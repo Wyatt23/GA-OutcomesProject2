@@ -4,8 +4,12 @@ Rails.application.routes.draw do
 
     resources :students do
       resources :brands
-    end 
-
-
-
+    end
 end
+
+# root route
+# controller#action
+# view
+# (link)
+#
+# page conroller (root "pages#welcome")

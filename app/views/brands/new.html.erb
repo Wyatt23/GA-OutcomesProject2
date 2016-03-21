@@ -1,4 +1,4 @@
-<%= form_for @brand, html: {class:"new_brand_form"} do |f| %>
+<%= form_for [@student, @brand] do |f| %>
 <div>
   <%= f.label :body,"What is your Brand?"%>
   <%= f.text_area :body%>
