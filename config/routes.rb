@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
     root "students#index"
 
-    resources :students, :brand_statements, :companies
+    resources :students, :brands, :companies
 
 
 end
