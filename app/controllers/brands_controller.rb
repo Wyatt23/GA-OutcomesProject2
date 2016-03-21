@@ -14,15 +14,15 @@ class BrandsController < ApplicationController
   end
 
   def show
-    @brand = Brand.find(params[:id])
+    @brand = Brand.find(params[:student_id])
   end
 
   def edit
-    @brand = Brand.find(params[:id])
+    @brand = Brand.find(params[:student_id])
   end
 
   def update
-    @brand = Brand.find(params[:id])
+    @brand = Brand.find(params[:student_id])
     @brand.update(brand_params)
     redirect_to brands_path(@brand)
   end

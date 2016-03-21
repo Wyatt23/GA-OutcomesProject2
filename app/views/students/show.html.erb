@@ -2,10 +2,9 @@
 
 <p>As of today, your brand statement looks like this:</p>
 <p><%=link_to"See Brand Statement",brand_path%></p>
+<p class="write_new"><%= link_to"Write New Brand Statement",new_brand_path,:class => "newBrandButton"%></p>
 
 
 <p>Here are the companies you are currently interested in:</p>
 
 <p>Here is a list of meetups you might like to attend!</p>
-
-<%= render partial: "whatevs", locals: {name: "Robin"} %>
