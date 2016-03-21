@@ -6,7 +6,6 @@ class StudentsController < ApplicationController
 
   def new
     @student = Student.new
-    # redirect to?
   end
 
   def create
