@@ -5,8 +5,8 @@
 
   <p><%= link_to "Delete Last Brand Statement",edit_student_brand_path(@student,@brand),:class => "DeleteBrandBtn"%></p>
 
-<%=@student.brands.each do |brand|%>
-<p class="timestamp">Updated on<%=brand.updated_at%></p>
+<%@student.brands.each do |brand|%>
+<p class="timestamp">Updated on<%=brand.updated_at.to_s(:short)%></p>
 <div>
   <p class="brandBody"> <%= brand.body%></p>
 

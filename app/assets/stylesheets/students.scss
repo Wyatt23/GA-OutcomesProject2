@@ -2,30 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // ----------student index styling-------------
+
 #student-index-body {
-  background-image:url('studindexbg.png');
+  background-image:url('bg1.png');
   background-repeat: no-repeat;
-  font-family: 'Neucha', sans-serif;
-  font-size: 20px;
-  color: rgb(231,231,231);
   background-size: cover;
+  font-size: 25px;
 }
 
 .enroll_button{
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 100%;
     width: 100px;
 	  height: 100px;
-	  background: red;
+	  background: rgba(118, 19, 20, .8);
     padding: 10px;
     margin-left: 10%;
     margin-right: 80%;
     border: 3px solid;
-    border-color: rgb(231,231,231);
-    text-align: center;
 }
-
+.ebcontent {
+  border-color: rgb(231,231,231);
+  font-size: 24px;
+  text-decoration: none;
+}
 .cohort-title {
   border: 3px solid;
   border-radius: 40px;
@@ -56,10 +57,8 @@ margin: 3px;
 //------student.new-styling------------
 
 #new-student-body {
-  background-image:url('studindexbg.png');
+  background-image:url('bg1.png');
   background-repeat: no-repeat;
-  font-family: 'Neucha', sans-serif;
-  font-size: 20px;
-  color: rgb(231,231,231);
+  background-position: center;
   background-size: cover;
 }

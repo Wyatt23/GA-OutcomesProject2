@@ -14,7 +14,11 @@
  *= require_tree .
  *= require_self
  */
-
+ body {
+   margin: 0 auto;
+   font-family: 'Neucha', sans-serif;
+   color: rgb(231,231,231);
+ }
 
  a:link, :active, :visited{
    text-decoration: underline 3px;
