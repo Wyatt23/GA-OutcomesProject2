@@ -8,10 +8,11 @@
 </div>
 
 <div class="cohort">
-<% @students.group_by do |student| %>
-<p class="student_name"><%=link_to "#{student.last_name},  #{student.first_name}",student_path(student)%>,
-  <%=student.ga_focus%>
-  <%=student.cohort_number%></p>
-  <% end %>
+  <% @students.group_by do |student| %>
+  <p class="student_name"><%=link_to "#{student.last_name},  #{student.first_name}",student_path(student)%>
+    <!-- <%=student.ga_focus%>
+    <%=student.cohort_number%> -->
+  </p>
+    <% end %>
 </div>
 </body>

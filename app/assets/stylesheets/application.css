@@ -1,48 +1,22 @@
 
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
 
-#student-index-body {
-  background-image:url('studindexbg.png');
-  background-repeat: no-repeat;
-  font-family: 'Neucha', sans-serif;
-  font-size: 20px;
-  color: rgb(231,231,231);
-  background-size: cover;
-}
 
-.enroll_button{
-    padding: 10px;
-    margin-left: 10%;
-    margin-right: 80%;
-    background-color: red;
-    border: 3px solid;
-    border-radius: 100px;
-    border-color: rgb(231,231,231);
-    text-align: center;
-}
-a:link, :active, :visited{
-  text-decoration: underline 3px;
-  color: rgb(231,231,231);
-}
-.cohort-title{
-  border: 3px solid;
-  border-radius: 40px;
-  border-color: rgb(231,231,231);
-  background-color: rgba(11,18,4,1);
-  padding: 1px;
-  text-align: center;
-  margin-right: 30%;
-  margin-left: 30%;
-}
-.cttext, .ctdesc {
-margin: 3px;
-}
-.cohort {
-  margin-left:5%;
-  margin-right:5%;
-  margin-top: 2%;
-  border: 3px solid;
-  border-radius: 40px;
-  border-color: rgb(231,231,231);
-  background-color: rgba(11,18,4,1);
-  padding: 20px;
-}
+ a:link, :active, :visited{
+   text-decoration: underline 3px;
+   color: rgb(231,231,231);
+ }

@@ -1,6 +1,10 @@
 
 <h1><%=@student.first_name%>'s  Brands Page</h1>
-  <p><%= link_to "Update My Brand",edit_student_brand_path(@student,@brand),:class => "UpdateBrandButton"%></p>
+
+  <p><%= link_to "Update My Brand",edit_student_brand_path(@student,@brand),:class => "UpdateBrandBtn"%></p>
+
+  <p><%= link_to "Delete Last Brand Statement",edit_student_brand_path(@student,@brand),:class => "DeleteBrandBtn"%></p>
+
 <%=@student.brands.each do |brand|%>
 <p class="timestamp">Updated on<%=brand.updated_at%></p>
 <div>

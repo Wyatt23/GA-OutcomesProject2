@@ -1,1 +1,65 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// ----------student index styling-------------
+#student-index-body {
+  background-image:url('studindexbg.png');
+  background-repeat: no-repeat;
+  font-family: 'Neucha', sans-serif;
+  font-size: 20px;
+  color: rgb(231,231,231);
+  background-size: cover;
+}
 
+.enroll_button{
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    width: 100px;
+	  height: 100px;
+	  background: red;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 80%;
+    border: 3px solid;
+    border-color: rgb(231,231,231);
+    text-align: center;
+}
+
+.cohort-title {
+  border: 3px solid;
+  border-radius: 40px;
+  border-color: rgb(231,231,231);
+  background-color: rgba(11,18,4,1);
+  padding: 1px;
+  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+.cttext, .ctdesc {
+margin: 3px;
+}
+.cohort {
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 2%;
+  border: 3px solid;
+  border-radius: 40px;
+  border-color: rgb(231,231,231);
+  background-color: rgba(11,18,4,1);
+  padding: 20px;
+  max-height: 300px;
+  -webkit-column-count: 5; /* Chrome, Safari, Opera */
+-moz-column-count: 5; /* Firefox */
+  column-count: 5;
+}
+//------student.new-styling------------
+
+#new-student-body {
+  background-image:url('studindexbg.png');
+  background-repeat: no-repeat;
+  font-family: 'Neucha', sans-serif;
+  font-size: 20px;
+  color: rgb(231,231,231);
+  background-size: cover;
+}
