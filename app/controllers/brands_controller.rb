@@ -1,7 +1,11 @@
 class BrandsController < ApplicationController
 
   def index
+    if (params[:student_id])
+      @brands = @student.brand.all
+    else
     @brands = Brand.all
+    end
   end
 
   def new
@@ -36,7 +40,7 @@ class BrandsController < ApplicationController
     @student = Student.find(params[:student_id])
     @brand = @student.brands.find(params[:id])
     @brand.destroy
-    
+
     redirect_to student_brand_path(@student,@brand)
   end
 

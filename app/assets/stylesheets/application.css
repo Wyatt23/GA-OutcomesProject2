@@ -1,29 +1,48 @@
-html{
-  height: 100%;
-  margin: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-body {
-  background-image:url('oc5.png');
+
+#student-index-body {
+  background-image:url('studindexbg.png');
   background-repeat: no-repeat;
   font-family: 'Neucha', sans-serif;
   font-size: 20px;
   color: rgb(231,231,231);
+  background-size: cover;
 }
 
 .enroll_button{
-    padding:.4em;
-    margin-left: 20%;
-    margin-right: 65%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 80%;
+    background-color: red;
     border: 3px solid;
     border-radius: 100px;
     border-color: rgb(231,231,231);
+    text-align: center;
 }
 a:link, :active, :visited{
-  text-decoration: none;
+  text-decoration: underline 3px;
   color: rgb(231,231,231);
+}
+.cohort-title{
+  border: 3px solid;
+  border-radius: 40px;
+  border-color: rgb(231,231,231);
+  background-color: rgba(11,18,4,1);
+  padding: 1px;
+  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+.cttext, .ctdesc {
+margin: 3px;
+}
+.cohort {
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 2%;
+  border: 3px solid;
+  border-radius: 40px;
+  border-color: rgb(231,231,231);
+  background-color: rgba(11,18,4,1);
+  padding: 20px;
 }
