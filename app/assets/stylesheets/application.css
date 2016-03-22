@@ -1,13 +1,29 @@
-html, body {
+html{
   height: 100%;
   margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  background-color: rgb(31,31,31);
-  background-image:url('skyline.jpeg');
-  background-size: cover;
-  font-family: 'Neucha', cursive;
+  background-image:url('oc5.png');
+  background-repeat: no-repeat;
+  font-family: 'Neucha', sans-serif;
   font-size: 20px;
+  color: rgb(231,231,231);
+}
+
+.enroll_button{
+    padding:.4em;
+    margin-left: 20%;
+    margin-right: 65%;
+    border: 3px solid;
+    border-radius: 100px;
+    border-color: rgb(231,231,231);
+}
+a:link, :active, :visited{
+  text-decoration: none;
   color: rgb(231,231,231);
 }
