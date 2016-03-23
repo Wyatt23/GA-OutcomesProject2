@@ -14,11 +14,55 @@
  *= require_tree .
  *= require_self
  */
- body {
+*{
+   font-family: 'Neucha', sans-serif;
+ }
+
+ body, h2{
    margin: 0 auto;
  }
 
  a:link, :active, :visited{
    text-decoration: underline 3px;
    color: #E0E0E0;
+ }
+
+ textarea{
+   font-size: 20px;
+ }
+
+ .submit_button{
+   margin:0;
+   position: fixed;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   padding: 17px;
+   text-align: center;
+   color: black;
+   border: 3px solid;
+ }
+
+ .form {
+   margin-left:25%;
+   margin-right:25%;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   border: 3px solid;
+   border-radius: 40px;
+   border-color: black;
+   background-color: white;
+   padding: 20px;
+ }
+ .label {
+   padding-left: 10%;
+ }
+ .formfield{
+   padding-bottom: 2%;
+ }
+ .input {
+ 	border:3px solid #456879;
+ 	border-radius:10px;
+ 	height: 22px;
+ 	width: 230px;
  }
