@@ -1,16 +1,23 @@
 <body class="brand-body">
 
-<h1 class="container brandwelcome"><%=@student.first_name%>'s  Brands Page</h1>
+  <div class="container-B welcome-B">
+    <h1>Welcome to <%=@student.first_name%>'s  Brand Statement Page!</h1>
+    <h3>Now you can see all of your drafts AND your final in ONE place!</h3>
+  </div>
 
-  <p><%= link_to "Update My Brand",edit_student_brand_path(@student,@brand),:class => "UpdateBrandBtn"%></p>
+  <p class="edit-b button"><%= link_to "Update My Brand",edit_student_brand_path(@student,@brand),:class => "buttontxt"%></p>
 
-  <p><%= link_to "Delete Last Brand Statement",edit_student_brand_path(@student,@brand),:class => "DeleteBrandBtn"%></p>
 
-<%@student.brands.each do |brand|%>
-<p class="timestamp">Updated on<%=brand.updated_at.to_s(:short)%></p>
-<div>
-  <p class="brandBody"> <%= brand.body%></p>
+  <p class="delete-b button"><%= link_to "Delete Last Brand Statement",edit_student_brand_path(@student,@brand),:class => "buttontxt"%></p>
 
-</div>
-<%end%>
-<body>
+  <div class="container-B brand-directory">
+    <%@student.brands.each do |brand|%>
+    <p class="separator">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </p>
+    <p class="timestamp">Updated on <%=brand.updated_at.to_s(:short)%></p>
+    <div>
+      <p> <%= brand.body%></p>
+
+    </div>
+    <%end%>
+  </div>
+</body>

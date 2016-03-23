@@ -12,3 +12,59 @@
     margin-left: 10%;
     color:#D0CCB4;
   }
+.container-B {
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 20%;
+  border: 4px solid;
+  border-radius: 40px;
+  color: #D0CCB4;
+  background-color: rgba(11,14,23,.95);
+  padding: 20px;
+}
+.welcome-B {
+  text-align: center;
+}
+.brand-directory {
+  margin-top: 0;
+  font-size: 20px;
+    a:link, :active, :visited{
+    text-decoration: underline 3px;
+    color: rgba(166, 26, 56, 1);
+    font-weight: bold;
+  }
+}
+.separator {
+  text-align: center;
+}
+.timestamp {
+  text-align: right;
+  padding-top: 4%;
+  padding-right: 2%;
+}
+.edit-b, .delete-b {
+  margin:0;
+  position: fixed;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+
+  padding: 17px;
+  text-align: center;
+  color: black 4px;
+  border: solid;
+}
+.delete-b {
+  background: rgba(166, 26, 56, 0.8);
+  margin-left: 74%;
+  margin-right: 6%;
+  margin-top: 10%;
+  margin-bottom:3%;
+}
+.edit-b {
+  background:rgba(72,72,72,.95);
+  margin-left: 74%;
+  margin-right: 7%;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}

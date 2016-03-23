@@ -1,8 +1,3 @@
-<%= form_for [@student, @brand] do |f| %>
-<div>
-  <%= f.label :body,"What is your Brand?"%>
-  <%= f.text_area :body%>
-</div>
+<h2>New Brand Statement</h2>
 
-  <%= f.submit "Submit New Brand Statement"%>
-<%end%>
+<%= render "form" %>

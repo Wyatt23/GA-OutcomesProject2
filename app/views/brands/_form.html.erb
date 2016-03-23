@@ -1,0 +1,8 @@
+<%= form_for [@student, @brand] do |f| %>
+<div>
+  <%= f.label :body,"Enter new brand statement here:"%>
+  <%= f.text_area :body%>
+</div>
+
+  <%= f.submit "Submit New Brand Statement"%>
+<%end%>
