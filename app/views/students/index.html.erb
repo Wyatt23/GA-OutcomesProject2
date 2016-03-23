@@ -4,16 +4,16 @@
   <%=link_to"Enroll New Student!",new_student_path, :class => "buttontxt"%>
 </div>
 
-<div class="cohort-title">
-  <h2>Students in WDI 8</h2>
-  <p>by last name</p>
+<div class="container cohort-title">
+  <p class="announce">Students in <%= "#{ Student.find(1).ga_focus}"%><%= "#{ Student.find(1).cohort_number}"%></p>
+  <h2>by last name</h2>
+  <h3>(click name for individual outcomes profile)</h3>
 </div>
 
 <div class="cohort">
   <% @students.group_by do |student| %>
-  <p class="student_name"><%=link_to "#{student.last_name},  #{student.first_name}",student_path(student)%>
-    <!-- <%=student.ga_focus%>
-    <%=student.cohort_number%> -->
+  <p class="student_name">
+    <%=link_to "#{student.last_name},  #{student.first_name}",student_path(student)%>
   </p>
     <% end %>
 </div>
