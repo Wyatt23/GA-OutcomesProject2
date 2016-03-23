@@ -1,28 +1,30 @@
-<body id="new-student-body">
+<body class="student-body">
 
+<div class="form">
   <%= form_for @student, html: {class:"enroll_form"} do |f| %>
 
-    <div>
-      <%= f.label :first_name, :class=>"sfn_label" %>
-      <%= f.text_field :first_name, :class=>"sfn_input" %>
+    <div class="formfield">
+      <%= f.label :first_name, :class=>"label" %>:
+      <%= f.text_field :first_name, :class=>"s-input" %>
     </div>
 
-    <div>
-      <%= f.label :last_name, :class=>"sln_label" %>
-      <%= f.text_field :last_name, :class=>"sln_input" %>
+    <div class="formfield">
+      <%= f.label :last_name, :class=>"label" %>:
+      <%= f.text_field :last_name, :class=>"s-input" %>
     </div>
 
-    <div>
-      <%= f.label :ga_focus, :class=>"sfocus_label" %>
-      <%= f.text_field :ga_focus, :class=>"sfocus_input" %>
+    <div class="formfield">
+      <%= f.label :ga_focus, :class=>"label" %>:
+      <%= f.text_field :ga_focus, :class=>"s-input" %>
     </div>
 
-    <div>
-      <%= f.label :cohort_number, :class=>"scnumb_label" %>
-      <%= f.text_field :cohort_number, :class=>"scnumb_input" %>
+    <div class="formfield">
+      <%= f.label :cohort_number, :class=>"label" %>:
+      <%= f.text_field :cohort_number, :class=>"s-input" %>
     </div>
 
     <%= f.submit "Enroll New Student", :class=>"enroll_form_submit_button"%>
     <%end%>
+  </div>
 
 </body>

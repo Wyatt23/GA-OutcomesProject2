@@ -1,6 +1,9 @@
-<h1>Welcome to your personal outcomes channel, <%= @student.first_name%>!</h1>
+<body class="student-body">
 
-<p>As of today, your brand statement looks like this:</p>
+<h1 class="container welcome">Welcome to your personal outcomes page, <%= @student.first_name%>!</h1>
+
+<div class="container personal-directory"
+<p>Check out your peronal BRAND STATEMENT here:</p>
 <p>
   <% last_brand_statement = @student.brands.last %>
   <% if last_brand_statement %>
@@ -12,6 +15,10 @@
 
 
 
+
 <p>Here are the companies you are currently interested in:</p>
 
 <p>Here is a list of meetups you might like to attend!</p>
+
+  </div>
+<body>
