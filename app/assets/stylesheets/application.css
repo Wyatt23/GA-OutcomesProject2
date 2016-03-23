@@ -22,7 +22,7 @@
    margin: 0 auto;
  }
 
- a:link, :active, :visited{
+ p.student_name > a:link, :active, :visited{
    text-decoration: underline 3px;
    color: #E0E0E0;
  }
@@ -42,17 +42,24 @@
    color: black;
    border: 3px solid;
  }
+ .buttontxt {
+   position: relative;
+   font-size: 24px;
+   text-decoration: underline;
+ }
 
  .form {
-   margin-left:25%;
-   margin-right:25%;
+   margin-left:20%;
+   margin-right:20%;
    margin-top: 10%;
    margin-bottom: 10%;
    border: 3px solid;
-   border-radius: 40px;
+   border-radius: 10px;
    border-color: black;
    background-color: white;
    padding: 20px;
+   min-width:350px;
+   min-height: 450px;
  }
  .label {
    padding-left: 10%;

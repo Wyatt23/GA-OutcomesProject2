@@ -4,11 +4,13 @@
     <h1>Welcome to <%=@student.first_name%>'s  Brand Statement Page!</h1>
     <h3>Now you can see all of your drafts AND your final in ONE place!</h3>
   </div>
+  <p class="new-b button">
+  <%= link_to "Create a new version!", new_student_brand_path(@student),:class => "buttontxt"%></p>
 
-  <p class="edit-b button"><%= link_to "Edit My Current Brand",edit_student_brand_path(@student,@brand),:class => "buttontxt"%></p>
+  <p class="edit-b button"><%= link_to "Edit My Last Brand",edit_student_brand_path(@student,@brand),:class => "buttontxt"%></p>
 
-
-  <p class="delete-b button"><%= link_to "Delete Last Brand Statement",edit_student_brand_path(@student,@brand),:class => "buttontxt"%></p>
+<!--
+  <p class="delete-b button"><%= link_to "Delete Last Brand Statement",edit_student_brand_path(@student,@brand),:class => "buttontxt"%></p> -->
 
   <div class="container-B brand-directory">
     <%@student.brands.each do |brand|%>
