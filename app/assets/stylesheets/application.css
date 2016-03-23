@@ -22,9 +22,12 @@
    margin: 0 auto;
  }
 
- p.student_name > a:link, :active, :visited{
-   text-decoration: underline 3px;
-   color: #E0E0E0;
+a:link, :active, :visited{
+   color: inherit;
+ }
+
+ h2{
+   font-size: 30px;
  }
 
  textarea{
@@ -33,7 +36,7 @@
 
  .submit_button{
    margin:0;
-   position: fixed;
+   position: relative;
    -moz-border-radius: 50%;
    -webkit-border-radius: 50%;
    border-radius: 50%;
@@ -43,6 +46,7 @@
    border: 3px solid;
  }
  .buttontxt {
+   top: 30px;
    position: relative;
    font-size: 24px;
    text-decoration: underline;
@@ -63,6 +67,7 @@
  }
  .label {
    padding-left: 10%;
+   font-size: 24px;
  }
  .formfield{
    padding-bottom: 2%;
@@ -70,6 +75,6 @@
  .input {
  	border:3px solid #456879;
  	border-radius:10px;
- 	height: 22px;
- 	width: 230px;
+ 	height: 30px;
+ 	width: 300px;
  }

@@ -14,41 +14,33 @@
     margin-left: 10%;
     margin-bottom: 75px;
 }
-.student-body > :link, :active, :visited{
-  text-decoration: underline 3px;
-  color: #E0E0E0;
+
+.new-s{
+  margin:0;
+  position: fixed;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 17px;
+  text-align: center;
+  border: 3px solid;
 }
 
-.enroll_button{
-    margin:0;
-    position: fixed;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-	  background:rgb(166, 26, 56);
-    padding: 15px;
-    text-align: center;
-    margin-top: 0px;
-    margin-left: 70%;
-    margin-right: 10%;
-    margin-top: 50px;
-    color: black 4px;
-    border: solid;
+.new-s {
+  right:30px;
+  top:125px;
+  bottom:125px;
+  width:125px;
+  height: 125px;
+  background:rgba(166, 26, 56, 0.8);
 }
 
-.buttontxt {
-  font-size: 24px;
-  text-decoration: underline;
-}
-
-.cohort, .container-S {
+.cohort, .container {
   margin-left:5%;
   margin-right:5%;
   margin-top: 20%;
   border: 4px solid;
   border-radius: 40px;
-  color: #E0E0E0;
-  background-color: rgba(72,72,72,.95);
   padding: 20px;
 }
 .cohort {
@@ -57,10 +49,10 @@
 -moz-column-count: 5; /* Firefox */
   column-count: 5;
   margin-top: 0;
+  color: #E0E0E0;
+  background-color: rgba(72,72,72,0.95);
 }
-h2{
-  font-size: 30px;
-}
+
 .cohort-title{
   margin-left:5%;
   margin-right:5%;
@@ -76,14 +68,13 @@ h2{
 .welcome {
   margin-top: 30%;
   background-color: rgba(166, 26, 56, 0.8);
+  color: black;
 }
 
 .personal-directory {
   margin-top: 0;
   font-size: 20px;
-    a:link, :active, :visited{
-    text-decoration: underline 3px;
-    color: rgba(166, 26, 56, 1);
-    font-weight: bold;
+  border-color: black;
+  color:#E0E0E0;
+  background-color: rgba(72,72,72,0.95);
   }
-}
