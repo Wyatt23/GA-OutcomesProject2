@@ -1,3 +1,14 @@
 // Place all the styles related to the brands controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.brand-body{
+    background: url('brandbklogo.jpg') no-repeat fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    font-family: 'Neucha', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    color:#D0CCB4;
+  }
