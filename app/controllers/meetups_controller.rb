@@ -1,4 +1,5 @@
 class MeetupsController < ApplicationController
+  
   def index
     if (params[:student_id])
       @meetups = @student.meetup.all

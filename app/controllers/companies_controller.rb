@@ -1,4 +1,5 @@
 class CompaniesController < ApplicationController
+
   def index
     if (params[:student_id])
       @companies = @student.company.all
@@ -45,7 +46,7 @@ class CompaniesController < ApplicationController
 
   private
     def company_params
-      params.require(:company).permit(:body)
+      params.require(:company).permit(:company_name)
     end
 
 end

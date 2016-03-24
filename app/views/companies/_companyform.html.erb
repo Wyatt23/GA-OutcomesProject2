@@ -1,0 +1,12 @@
+<div class="form-c">
+  <%= form_for [@student, @company] do |f| %>
+
+    <div class="form-c">
+      <%= f.label :company_name,"Enter a company here:",:class=>"label-c"%>
+      <%= f.text_area :company_name,:class=>"input-c"%>
+
+
+  <%= f.submit "Submit company",:class=>"submit_button buttontxt"%>
+<%end%>
+  </div>
+</div>

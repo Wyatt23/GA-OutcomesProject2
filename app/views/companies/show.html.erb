@@ -1,0 +1,24 @@
+<body class="company-body">
+
+  <div class="container-B welcome-B">
+    <h1>Welcome to <%= "#{@student.first_name}   #{@student.last_name}'s"%>  List of Prospective Companies' Page!</h1> -->
+
+  <h3>Now you can keep track of all the companies that pique your interest here, in ONE place!</h3>
+  </div>
+  <p class="new-b button">
+  <%= link_to "Create a new version!", new_student_company_path(@student),:class => "buttontxt"%></p>
+
+  <p class="edit-b button"><%= link_to "Edit the last company",edit_student_company_path(@student,@company),:class => "buttontxt"%></p>
+
+
+  <div class="container-B company-directory">
+    <%@student.companies.each do |company|%>
+    <p class="separator">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </p>
+    <p class="timestamp">Updated on <%=company.updated_at.to_s(:short)%></p>
+    <div>
+      <p> <%= company.company_name%></p>
+
+    </div>
+    <%end%>
+  </div>
+</body>
