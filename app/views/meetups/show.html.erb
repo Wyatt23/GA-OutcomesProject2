@@ -1,23 +1,24 @@
 <body class="meetup-body">
 
-  <div class="container-B welcome-B">
+  <div class="container-m welcome-m">
     <h1>Welcome to <%= "#{@student.first_name}   #{@student.last_name}'s"%>  List of Prospective Meetups' Page!</h1>
 
   <h3>Now you can keep track of all the meetups that pique your interest here, in ONE place!</h3>
   </div>
-  <p class="new-b button">
-  <%= link_to "Create a new version!", new_student_meetup_path(@student),:class => "buttontxt"%></p>
+  <p class="new-m button">
+  <%= link_to "Add a New Meetup!", new_student_meetup_path(@student),:class => "buttontxt"%></p>
 
-  <p class="edit-b button"><%= link_to "Edit the last meetup",edit_student_meetup_path(@student,@meetup),:class => "buttontxt"%></p>
+  <p class="edit-m button"><%= link_to "Change Meetup!",edit_student_meetup_path(@student,@meetup),:class => "buttontxt"%></p>
 
 
-  <div class="container-B meetup-directory">
+  <div class="container-m meetup-directory">
     <%@student.meetups.each do |meetup|%>
     <p class="separator">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </p>
     <p class="timestamp">Updated on <%=meetup.updated_at.to_s(:short)%></p>
     <div>
-      <p> <%= meetup.meetup_name%></p>
-
+      <p> <%=meetup.meetup_name%></p>
+      <p> <%=meetup.location%></p>
+      <p> <%=meetup.date_of_meetup%></p>
     </div>
     <%end%>
   </div>

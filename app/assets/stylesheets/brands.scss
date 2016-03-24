@@ -18,10 +18,11 @@
   margin-left:5%;
   margin-right:5%;
   margin-top: 20%;
+  margin-bottom: 5%;
   border: 4px solid;
   border-radius: 40px;
   color: #D0CCB4;
-  background-color: rgba(11,14,23,.95);
+  background-color: rgba(11,14,23,0.95);
   padding: 20px;
 }
 .welcome-B {
@@ -37,7 +38,6 @@
 }
 .timestamp {
   text-align: right;
-  padding-top: 4%;
   padding-right: 2%;
 }
 .edit-b, .new-b{

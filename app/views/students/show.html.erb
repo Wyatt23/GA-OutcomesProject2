@@ -30,7 +30,7 @@
 <p>
   <% last_meetup = @student.meetups.last %>
   <% if last_meetup %>
-    <%= link_to "See List of Possible Meetups", student_meetup_path(@student,last_meetup),:class => "slink" %>
+    <%= link_to "See Your Meetups", student_meetup_path(@student,last_meetup),:class => "slink" %>
   <% else %>
     <%= link_to "See a list of meetups you might want to attend!", new_student_meetup_path(@student) %>
   <% end %>

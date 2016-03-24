@@ -1,12 +1,21 @@
 <div class="form">
-  <%= form_for [@student, @meetup] do |f| %>
+  <%= form_for [@student,@meetup], html: {class:"enroll_form"} do |f| %>
 
-    <div class="form-b">
-      <%= f.label :meetup_name,"Enter a meetup here:",:class=>"label"%>
-      <%= f.text_area :meetup_name,:class=>"input"%>
+    <div class="formfield">
+      <%= f.label :meetup_name, :class=>"label"%>:<br>
+      <%= f.text_field :meetup_name, :class=>"input" %>
+    </div>
 
+    <div class="formfield">
+      <%= f.label :location, :class=>"label" %>:<br>
+      <%= f.text_field :location, :class=>"input" %>
+    </div>
 
-  <%= f.submit "Submit meetup",:class=>"submit_button buttontxt"%>
-<%end%>
+    <div class="formfield">
+      <%= f.label :date_of_meetup, :class=>"label" %>:<br>
+      <%= f.text_field :date_of_meetup, :class=>"input" %>
+    </div>
+
+    <%= f.submit "Submit Meetup", :class=>"submit_button buttontxt"%>
+    <%end%>
   </div>
-</div>

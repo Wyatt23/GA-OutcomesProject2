@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .company-body{
-    background: url('bg1.png') no-repeat fixed;
+    background: url('oc_companybk.jpg') no-repeat fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -11,4 +11,75 @@
     margin-right: 10%;
     margin-left: 10%;
     color:#D0CCB4;
+  }
+  .container-c {
+    margin-left:15%;
+    margin-right:15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 4px solid;
+    border-radius: 40px;
+    color: rgb(11,14,23);
+    background-color: rgba(194,162,110,0.95);
+    padding: 20px;
+  }
+  .welcome-c {
+    text-align: center;
+  }
+  .company-directory {
+    margin-left:15%;
+    margin-right:15%;
+    margin: 0;
+    font-size: 20px;
+    padding-left: 70px;
+  }
+
+  .edit-c, .new-c{
+    margin:0;
+    position: fixed;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 17px;
+    text-align: center;
+    border: 3px solid;
+  }
+  .edit-c{
+    right:30px;
+    top:125px;
+    bottom:125px;
+    width:125px;
+    height: 125px;
+    background:rgba(166, 26, 56, 0.8);
+  }
+  .new-c{
+    left:30px;
+    top:125px;
+    bottom:5px;
+    width:125px;
+    height:125px;
+    background:rgba(72,72,72,0.9);
+  }
+  .form-c {
+    color: rgb(11,14,23);
+    padding-bottom: 2%;
+  }
+  .input-c{
+    border:3px solid rgb(11,14,23);
+    border-radius:10px;
+    height: 400px;
+    width: 300px;
+  }
+  .title-c{
+    margin-top: 2%;
+    margin-botton: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 4px solid;
+    border-radius: 30px;
+    text-align: center;
+    height:45px;
+    color: rgb(11,14,23);
+    background-color: rgba(194,162,110,0.95);
+    padding: 20px;
   }
