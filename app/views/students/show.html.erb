@@ -5,7 +5,7 @@
 <div class="container personal-directory"
 <p>Check out your peronal BRAND STATEMENT here:</p>
 <p>
-  <% last_brand_statement = @student.brands.last %>
+  <% last_brand_statement = @student.brands.first %>
   <% if last_brand_statement %>
     <%= link_to "See Brand Statement", student_brand_path(@student,last_brand_statement),:class => "slink" %>
   <% else %>
