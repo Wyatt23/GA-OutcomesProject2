@@ -16,7 +16,7 @@
 <p>Here are the companies you are currently interested in.</p>
 <p>(Add three of these per week while you are job-seeking)</p>
 <p>
-  <% last_company = @student.companies.last %>
+  <% last_company = @student.companies.first %>
   <% if last_company %>
     <%= link_to "See List of Prospective Companies", student_company_path(@student,last_company),:class => "slink" %>
   <% else %>
@@ -28,7 +28,7 @@
 <p>Here is a list of meetups you might like to attend!</p>
 <p>(Try to attend three of these before you graduate GA)</p>
 <p>
-  <% last_meetup = @student.meetups.last %>
+  <% last_meetup = @student.meetups.first %>
   <% if last_meetup %>
     <%= link_to "See Your Meetups", student_meetup_path(@student,last_meetup),:class => "slink" %>
   <% else %>
