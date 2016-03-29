@@ -1,2 +1,7 @@
 README
 Welcome to the new Outcomes Roadmap for General Assembly!
+
+This began as a class assignment in comparing two model/controllers in rails with added styling.
+I chose to start project that might solve the issue of the "Outcomes Road Map" at General Assembly.
+
+You can view the Roadmap here: 
