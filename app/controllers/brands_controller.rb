@@ -2,11 +2,14 @@ class BrandsController < ApplicationController
 
   def index
     if (params[:student_id])
-      @brands = @student.brand.all
+      @student = Student.find(params[:student_id])
+      @brands = @student.brands.all
     else
-    @brands = Brand.all
+    @students = Student.all
+    @brands = @students.map{|s| s.brands.last}.compact
     end
   end
+  # //adrian say I should move show to here - need help and define student here
 
   def new
     @student = Student.find(params[:student_id])
@@ -41,7 +44,7 @@ class BrandsController < ApplicationController
     @brand = @student.brands.find(params[:id])
     @brand.destroy
 
-    redirect_to student_brand_path(@student,@brand)
+    redirect_to student_brands_path(@student)
   end
 
   private

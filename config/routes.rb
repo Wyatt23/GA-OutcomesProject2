@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :students do
       resources :brands, :companies, :meetups
     end
+    resources :brands
 end
 
 # root route
