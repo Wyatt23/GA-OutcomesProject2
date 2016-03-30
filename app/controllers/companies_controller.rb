@@ -4,7 +4,7 @@ class CompaniesController < ApplicationController
     if (params[:student_id])
       @companies = @student.company.all
     else
-    @companies = Company.all
+      @companies = Company.all
     end
   end
 
@@ -45,8 +45,8 @@ class CompaniesController < ApplicationController
   end
 
   private
-    def company_params
-      params.require(:company).permit(:company_name)
-    end
+  def company_params
+    params.require(:company).permit(:company_name)
+  end
 
 end

@@ -1,81 +1,81 @@
 
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 *{
-   font-family: 'Neucha', sans-serif;
- }
+  font-family: 'Neucha', sans-serif;
+}
 
- body, h2, h3{
-   margin: 0 auto;
- }
+body, h2, h3{
+  margin: 0 auto;
+}
 
 a:link, :active, :visited{
-   color: inherit;
- }
+  color: inherit;
+}
 
- h2{
-   font-size: 30px;
- }
+h2{
+  font-size: 30px;
+}
 
- textarea{
-   font-size: 20px;
- }
-
- .submit_button{
-   margin:0;
-   position: relative;
-   -moz-border-radius: 50%;
-   -webkit-border-radius: 50%;
-   border-radius: 50%;
-   padding: 17px;
-   text-align: center;
-   color: black;
-   border: 3px solid;
- }
- .buttontxt {
-   top: 30px;
-   position: relative;
-   font-size: 24px;
-   text-decoration: underline;
- }
-
- .form {
-   margin-left:20%;
-   margin-right:20%;
-   margin-top: 10%;
-   margin-bottom: 10%;
-   border: 3px solid;
-   border-radius: 10px;
-   border-color: black;
-   background-color: white;
-   padding: 20px;
-   min-width:350px;
-   min-height: 450px;
- }
- .label {
-   padding-left: 10%;
-   font-size: 24px;
- }
- .formfield{
-   padding-bottom: 2%;
- }
- .input {
+textarea{
   font-size: 20px;
- 	border:3px solid #456879;
- 	border-radius:10px;
- 	height: 30px;
- 	width: 300px;
- }
+}
+
+.submit_button{
+  margin:0;
+  position: relative;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 17px;
+  text-align: center;
+  color: black;
+  border: 3px solid;
+}
+.buttontxt {
+  top: 30px;
+  position: relative;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.form {
+  margin-left:20%;
+  margin-right:20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: black;
+  background-color: white;
+  padding: 20px;
+  min-width:350px;
+  min-height: 450px;
+}
+.label {
+  padding-left: 10%;
+  font-size: 24px;
+}
+.formfield{
+  padding-bottom: 2%;
+}
+.input {
+  font-size: 20px;
+  border:3px solid #456879;
+  border-radius:10px;
+  height: 30px;
+  width: 300px;
+}

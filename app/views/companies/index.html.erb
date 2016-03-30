@@ -1,10 +1,9 @@
 <body class="company-body">
-<h1>Companies Index Page</h1>
+  <h1>Companies Index Page</h1>
   <div>
     <%= @companies.each do |company|%>
-
     <p>Last updated on:<%=company.updated_at%></p>
     <p><%=company.company_name%></p>
   </div>
-<%end%>
+  <%end%>
 </body>

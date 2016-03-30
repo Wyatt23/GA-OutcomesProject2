@@ -1,10 +1,9 @@
 <body class="meetup-body">
-<h1>Meetup Index Page</h1>
+  <h1>Meetup Index Page</h1>
   <div>
     <%= @meetups.each do |meetup|%>
-
     <p>Last updated on:<%=meetup.updated_at%></p>
     <p><%=meetup.meetup_name%></p>
   </div>
-<%end%>
+  <%end%>
 </body>

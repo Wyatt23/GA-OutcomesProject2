@@ -4,7 +4,7 @@ class MeetupsController < ApplicationController
     if (params[:student_id])
       @meetups = @student.meetup.all
     else
-    @meetups = Meetup.all
+      @meetups = Meetup.all
     end
   end
 
@@ -45,7 +45,7 @@ class MeetupsController < ApplicationController
   end
 
   private
-    def meetup_params
-      params.require(:meetup).permit(:meetup_name, :location, :date_of_meetup)
-    end
+  def meetup_params
+    params.require(:meetup).permit(:meetup_name, :location, :date_of_meetup)
+  end
 end

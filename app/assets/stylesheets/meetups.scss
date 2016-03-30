@@ -2,83 +2,83 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .meetup-body{
-    background: url('oc_meetups.jpg') no-repeat fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    font-family: 'Neucha', sans-serif;
-    margin-right: 10%;
-    margin-left: 10%;
-    color:#D0CCB4;
-  }
-  .container-m {
-    margin-left:15%;
-    margin-right:15%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border: 4px solid;
-    border-radius: 40px;
-    color: rgb(11,14,23);
-    background-color: rgba(116,170,7,0.8);
-    padding: 20px;
-  }
-  .welcome-m {
-    text-align: center;
-  }
-  .meetup-directory {
-    margin-left:15%;
-    margin-right:15%;
-    font-size: 25px;
-    padding-left: 70px;
-  }
+  background: url('oc_meetups.jpg') no-repeat fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  font-family: 'Neucha', sans-serif;
+  margin-right: 10%;
+  margin-left: 10%;
+  color:#D0CCB4;
+}
+.container-m {
+  margin-left:15%;
+  margin-right:15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 4px solid;
+  border-radius: 40px;
+  color: rgb(11,14,23);
+  background-color: rgba(116,170,7,0.8);
+  padding: 20px;
+}
+.welcome-m {
+  text-align: center;
+}
+.meetup-directory {
+  margin-left:15%;
+  margin-right:15%;
+  font-size: 25px;
+  padding-left: 70px;
+}
 
-  .edit-m, .new-m{
-    margin:0;
-    position: fixed;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    padding: 17px;
-    text-align: center;
-    border: 3px solid;
-  }
-  .edit-m{
-    right:30px;
-    top:125px;
-    bottom:125px;
-    width:125px;
-    height: 125px;
-    background:rgba(166, 26, 56, 0.8);
-  }
-  .new-m{
-    left:30px;
-    top:125px;
-    bottom:5px;
-    width:125px;
-    height:125px;
-    background:rgba(72,72,72,0.9);
-  }
-  .form-m {
-    color: rgb(11,14,23);
-    padding-bottom: 2%;
-  }
-  .input-m{
-    border:3px solid rgb(11,14,23);
-    border-radius:10px;
-    height: 400px;
-    width: 300px;
-  }
-  .title-m{
-    margin-top: 2%;
-    margin-botton: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 4px solid;
-    border-radius: 30px;
-    text-align: center;
-    height:45px;
-    color: rgb(11,14,23);
-    background-color: rgba(116,170,7,0.8);
-    padding: 20px;
-  }
+.edit-m, .new-m{
+  margin:0;
+  position: fixed;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 17px;
+  text-align: center;
+  border: 3px solid;
+}
+.edit-m{
+  right:30px;
+  top:125px;
+  bottom:125px;
+  width:125px;
+  height: 125px;
+  background:rgba(166, 26, 56, 0.8);
+}
+.new-m{
+  left:30px;
+  top:125px;
+  bottom:5px;
+  width:125px;
+  height:125px;
+  background:rgba(72,72,72,0.9);
+}
+.form-m {
+  color: rgb(11,14,23);
+  padding-bottom: 2%;
+}
+.input-m{
+  border:3px solid rgb(11,14,23);
+  border-radius:10px;
+  height: 400px;
+  width: 300px;
+}
+.title-m{
+  margin-top: 2%;
+  margin-botton: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 4px solid;
+  border-radius: 30px;
+  text-align: center;
+  height:45px;
+  color: rgb(11,14,23);
+  background-color: rgba(116,170,7,0.8);
+  padding: 20px;
+}

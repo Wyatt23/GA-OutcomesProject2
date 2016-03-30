@@ -5,8 +5,8 @@ class BrandsController < ApplicationController
       @student = Student.find(params[:student_id])
       @brands = @student.brands.all
     else
-    @students = Student.all
-    @brands = @students.map{|s| s.brands.last}.compact
+      @students = Student.all
+      @brands = @students.map{|s| s.brands.last}.compact
     end
   end
   # //adrian say I should move show to here - need help and define student here
@@ -48,8 +48,8 @@ class BrandsController < ApplicationController
   end
 
   private
-    def brand_params
-      params.require(:brand).permit(:body)
-    end
+  def brand_params
+    params.require(:brand).permit(:body)
+  end
 
 end

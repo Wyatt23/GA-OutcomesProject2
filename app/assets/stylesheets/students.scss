@@ -4,15 +4,15 @@
 // ----------student index styling-------------
 
 .student-body {
-    background: url('ocgraywelcomebk.jpg') no-repeat fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    font-family: 'Neucha', sans-serif;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 75px;
+  background: url('ocgraywelcomebk.jpg') no-repeat fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  font-family: 'Neucha', sans-serif;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 75px;
 }
 
 .announce {
@@ -69,7 +69,7 @@
 .cohort {
   font-size: 20px;
   -webkit-column-count: 5; /* Chrome, Safari, Opera */
--moz-column-count: 5; /* Firefox */
+  -moz-column-count: 5; /* Firefox */
   column-count: 5;
   margin-top: 0;
   color: #E0E0E0;
@@ -88,17 +88,17 @@
 .personal-directory {
   margin-top: 0;
   font-size: 25px;
-  }
+}
 
-  .title-s{
-    margin-top: 2%;
-    margin-botton: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 4px solid;
-    border-radius: 30px;
-    text-align: center;
-    height:45px;
-    padding: 20px;
-    background-color: rgba(166, 26, 56, 0.8);
-  }
+.title-s{
+  margin-top: 2%;
+  margin-botton: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 4px solid;
+  border-radius: 30px;
+  text-align: center;
+  height:45px;
+  padding: 20px;
+  background-color: rgba(166, 26, 56, 0.8);
+}

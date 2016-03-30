@@ -1,23 +1,15 @@
 <body class="company-body">
-
   <div class="container-c welcome-c">
     <h1> <%= "#{@student.first_name}   #{@student.last_name}'s"%> Outcomes Company List</h1>
-
-  <h3>Now you can keep track of all the companies that pique your interest here, in ONE place!</h3>
+    <h3>Now you can keep track of all the companies that pique your interest here, in ONE place!</h3>
   </div>
-  <p class="new-c button">
-  <%= link_to "Add Company", new_student_company_path(@student),:class => "buttontxt"%></p>
-
+  <p class="new-c button"><%= link_to "Add Company", new_student_company_path(@student),:class => "buttontxt"%></p>
   <p class="edit-c button"><%= link_to "Edit Company",edit_student_company_path(@student,@company),:class => "buttontxt"%></p>
-
-
   <div class="container-c company-directory">
     <%@student.companies.each do |company|%>
-
     <p class="timestamp">Added on <%=company.updated_at.to_s(:short)%></p>
     <div>
-      <p> <%= company.company_name%></p>
-
+    <p> <%= company.company_name%></p>
     </div>
     <%end%>
   </div>
