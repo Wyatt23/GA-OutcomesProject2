@@ -1,31 +1,29 @@
 <body class="brand-body">
-
-  <div class="container-B welcome-B">
+   <div class="container-B welcome-B">
     <% if @student %>
-    <h1>Welcome to <%= "#{@student.first_name}   #{@student.last_name}'s"%>  Brand Statement Page!</h1>
-    <h3>Now you can see all of your drafts AND your final in ONE place!</h3>
-  </div>
-  <p class="new-b button">
-    <%= link_to "Create a new version!", new_student_brand_path(@student),:class => "buttontxt"%></p>
-    <p class="edit-b button"><%= link_to "Edit My Last Brand",edit_student_brand_path(@student,@brands.last),:class => "buttontxt"%></p>
+      <h1>Welcome to <%= "#{@student.first_name}   #{@student.last_name}'s"%>  Brand Statement Page!</h1>
+      <h3>Now you can see all of your drafts AND your final in ONE place!</h3>
+    </div>
+  <p class="new-b button"><%= link_to "Create a new version!", new_student_brand_path(@student),:class => "buttontxt"%></p>
+  <p class="edit-b button"><%= link_to "Edit My Last Brand",edit_student_brand_path(@student,@brands.last),:class => "buttontxt"%></p>
     <div class="container-B brand-directory">
       <%@student.brands.each do |brand|%>
-      <p class="separator">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </p>
-      <p class="timestamp">Updated on <%=brand.updated_at.to_s(:short)%></p>
-      <div>
-        <p> <%= brand.body%></p>
-        <p> <%=link_to"Delete Brand Statement",student_brand_path(@student,brand), method: :delete%></p>
-      </div>
+        <p class="separator">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </p>
+        <p class="timestamp">Updated on <%=brand.updated_at.to_s(:short)%></p>
+        <div>
+          <p> <%= brand.body%></p>
+          <p> <%=link_to"Delete Brand Statement",student_brand_path(@student,brand), method: :delete%></p>
+        </div>
       <%end%>
     </div>
-    <% else %>
-    <div class="container-B brand-directory">
-      <%@brands.each do |brand|%>
-      <p class="separator">. . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . </p>
-      <div>
-        <p> <%= brand.body%></p>
-        <p> <%=link_to"Delete Brand Statement",student_brand_path(brand.student, brand), method: :delete%></p>
-      </div>
+      <% else %>
+        <div class="container-B brand-directory">
+          <%@brands.each do |brand|%>
+          <p class="separator">. . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . </p>
+        <div>
+          <p> <%= brand.body%></p>
+          <p> <%=link_to"Delete Brand Statement",student_brand_path(brand.student, brand), method: :delete%></p>
+        </div>
       <% end %>
       <% end %>
     </body>
