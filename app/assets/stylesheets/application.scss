@@ -14,6 +14,10 @@
 *= require_tree .
 *= require_self
 */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
 *{
   font-family: 'Neucha', sans-serif;
 }
