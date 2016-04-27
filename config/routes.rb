@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
     get "pages/about", :as=> 'about_us'
     get "pages/index", :as=> 'table_of_contents'
-    get "pages/resources" :as=> 'resources'
-    get "pages/assignments" :as=> 'assignments'
-    get "pages/schedule" :as=> 'schedule'
-    get "pages/policy" :as=> 'policy'
+    get "pages/resources", :as=> 'resources'
+    get "pages/assignments", :as=> 'assignments'
+    get "pages/schedule", :as=> 'schedule'
+    get "pages/policy", :as=> 'policy'
 
     resources :students do
       resources :brands, :companies, :meetups
