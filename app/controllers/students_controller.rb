@@ -2,7 +2,10 @@ class StudentsController < ApplicationController
 
 
   def index
+    @params = params
     @students = Student.order(:last_name)
+    # //localhost:3000/students?cohort=WDI8&first_name=John
+    # Student.find_by(cohort: params[:cohort], first_name: params[:first_name])
   end
 
   def new
