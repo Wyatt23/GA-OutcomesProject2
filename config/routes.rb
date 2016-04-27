@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
-    root "students#index"
+    root "pages#welcome"
 
     resources :students do
       resources :brands, :companies, :meetups
     end
     resources :brands
+    resources :pages
 end
 
 # root route
