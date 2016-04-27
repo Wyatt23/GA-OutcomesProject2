@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get "pages/assignments", :as=> 'assignments'
     get "pages/schedule", :as=> 'schedule'
     get "pages/policy", :as=> 'policy'
+    get "pages/prework", :as=> 'prework'
 
     resources :students do
       resources :brands, :companies, :meetups
