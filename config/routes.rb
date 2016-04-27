@@ -2,12 +2,13 @@ Rails.application.routes.draw do
 
     root "pages#welcome"
 
-    get "pages/about", :as=> 'about_us'
+    get "pages/team", :as=> 'team'
     get "pages/index", :as=> 'table_of_contents'
     get "pages/resources", :as=> 'resources'
     get "pages/assignments", :as=> 'assignments'
     get "pages/schedule", :as=> 'schedule'
     get "pages/policy", :as=> 'policy'
+    get "pages/prework", :as=> 'prework'
 
     resources :students do
       resources :brands, :companies, :meetups
