@@ -1,0 +1,11 @@
+.container
+  .btn.btn-default= link_to "Add Student to Cohort", new_student_path
+  .col-md-12
+    .container.text-center
+      %h1 Students in #{Student.find(1).ga_focus}#{Student.find(1).cohort_number}
+      %h3 (by last name)
+      .jumbotron
+        - @students.group_by do |student|
+          .btn.btn-default
+            =link_to "X", student_path(student), method: :delete
+            =link_to "#{student.last_name}, #{student.first_name}", student_path(student)
