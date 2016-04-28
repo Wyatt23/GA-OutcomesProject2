@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     resources :brands
     resources :pages
     resources :assignments
+    resources :resources
 end
 
 # root route
