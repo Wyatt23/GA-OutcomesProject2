@@ -3,7 +3,6 @@ Rails.application.routes.draw do
     root "pages#welcome"
 
     get "pages/team", :as=> 'team'
-    get "pages/resources", :as=> 'resources'
     get "pages/schedule", :as=> 'schedule'
     get "pages/policy", :as=> 'policy'
     get "pages/prework", :as=> 'prework'

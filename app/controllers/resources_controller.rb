@@ -1,4 +1,4 @@
-class ResourceController < ApplicationController
+class ResourcesController < ApplicationController
   before_action :find_resource, only: [:show, :edit, :update, :destroy]
 
   def index

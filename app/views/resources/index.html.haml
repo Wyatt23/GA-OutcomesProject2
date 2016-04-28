@@ -6,5 +6,5 @@
       .jumbotron
         - @resources.each do |resource|
           %h2
-            = "-- #{resource.topic}"
-            = link_to resrouces.url, resource
+            = "#{resource.topic}"
+            = link_to resource.url, resource
