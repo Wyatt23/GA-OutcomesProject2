@@ -18,6 +18,7 @@
         %li= link_to "Student Portal", students_path
         %form.navbar-form.navbar-left{:role => "search", method: "GET", action: "/students"}
           .form-group
+            -# i'm leaving this here for reference until i can utilize this feature
             -# %input{type: "hidden", name: "last_name", value: "Stevenson"}
             %input{:type => "text", name: "first_name", :class => "form-control", :placeholder => "Search"}
           %button{:type => "submit", :class => "btn btn-default"}
@@ -35,3 +36,5 @@
       =link_to "Pre-Work", "https://generalassemblydc.typeform.com/to/rOEItv"
     .btn.btn-default
       =link_to "Overview", table_of_contents_path
+    .btn.btn-default
+      =link_to "all assignments ADMIN",assignments_index_path

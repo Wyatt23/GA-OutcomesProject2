@@ -42,4 +42,6 @@ Student.create(first_name: 'Max', last_name: 'Milliank',ga_focus:'WDI', cohort_n
 Student.create(first_name: 'Nyron', last_name: 'Waite',ga_focus:'WDI', cohort_number:'8')
 Student.create(first_name: 'Ryan', last_name: 'Krolick',ga_focus:'WDI', cohort_number:'8')
 
-Assignment.create(title: 'Outcomes Prework', instructions: 'Complete the questionaire at https://drive.google.com/file/d/0B0cuNYi34jyuNUtzLXU5MUJpYmc/view', due_date:(2015, 6, 22),ga_focus: 'all')
+Assignment.create(title: 'Outcomes Prework', instructions: 'Complete the questionaire', due_date:(20161122), ga_focus: 'all')
+Assignment.create(title: 'WDI Assignment Example', instructions: 'Do this and this', due_date:(20171017), ga_focus:'WDI')
+Assignment.create(title: 'UX Assignment Example', instructions: 'Do this and that and this', due_date:(20171003), ga_focus: 'UXDI')

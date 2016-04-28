@@ -9,7 +9,7 @@ class BrandsController < ApplicationController
       @brands = @students.map{|s| s.brands.last}.compact
     end
   end
-  # //adrian say I should move show to here - need help and define student here
+  # //adrian says I should move show to here - need help and define student here
 
   def new
     @student = Student.find(params[:student_id])
