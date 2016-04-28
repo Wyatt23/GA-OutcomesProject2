@@ -2,9 +2,9 @@
   .btn.btn-default= link_to "Add Assignment to Cohort", new_assignment_path
   .col-md-12
     .container.text-center
-      %h1 Test
+      %h1 All Outcomes Assignments
       .jumbotron
         - @assignments.each do |assignment|
-          %p
-            %h2= link_to assignment.title, assignment
-            %h5= link_to assignment.ga_focus, root_path
+          %h2
+            = link_to assignment.title, assignment
+            = "-- #{assignment.ga_focus}"

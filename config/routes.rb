@@ -3,14 +3,13 @@ Rails.application.routes.draw do
     root "pages#welcome"
 
     get "pages/team", :as=> 'team'
-    get "pages/index", :as=> 'table_of_contents'
     get "pages/resources", :as=> 'resources'
-    get "pages/assignments", :as=> 'assignments'
     get "pages/schedule", :as=> 'schedule'
     get "pages/policy", :as=> 'policy'
     get "pages/prework", :as=> 'prework'
 
     get "assignments/index", :as=> 'assignments_index'
+    get "assignments/new", :as=> 'new_assignment'
 
     resources :students do
       resources :brands, :companies, :meetups

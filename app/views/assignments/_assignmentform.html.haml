@@ -1,0 +1,21 @@
+#assignment-form
+= simple_form_for @assignment, html: {multipart: true } do |f|
+  -if @assignment.errors.any?
+    #errors
+      %h2
+        =pluralize(@assignment.errors.count, "error")
+        prevented assignment from saving
+      %ul
+        -@assignment.errors.full_messages.each do |msg|
+          %li=msg
+
+  .form-group
+    = f.input :title, input_html: { class: "form-control" }
+  .form-group
+    = f.input :ga_focus, input_html: { class: "form-control" }
+  .form-group
+    = f.input :instructions, input_html: { class: "form-control" }
+  .form-group
+    = f.input :due_date, input_html: { class: "form-control" }
+
+    =f.button :submit, value: "Submit Assignment", class:"btn btn-primary"

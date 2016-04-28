@@ -1,7 +1,7 @@
 class AssignmentsController < ApplicationController
   before_action :find_assignment, only: [:show, :edit, :update, :destroy]
+
   def index
-    @params = params
     @assignments = Assignment.all
   end
 
@@ -14,16 +14,14 @@ class AssignmentsController < ApplicationController
 
   def create
     @assignment = Assignment.create!(assignment_params)
-
     if @assignment.save
-      redirect_to @assignment, notice: "Assignment was saved successfully!"
+      redirect_to assignments_index_path, notice: "Assignment was saved successfully!"
     else
       render 'new'
     end
   end
 
   def edit
-    @assignment = Assignment.find(params[:id])
   end
 
   def update
