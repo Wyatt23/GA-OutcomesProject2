@@ -1,6 +1,8 @@
 <div class= "col-md-6 col-md-offset-3 container">
   <h1 class="jumbotron">Welcome to your personal outcomes page, <%= @student.first_name%>!</h1>
-<div class="container personal-directory">
+  
+  <div class="container personal-directory">
+
   <p>Check out your peronal BRAND STATEMENT here:</p>
   <p>
     <% last_brand_statement = @student.brands.first %>
