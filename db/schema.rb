@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160324041912) do
+ActiveRecord::Schema.define(version: 20160428113704) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,16 @@ ActiveRecord::Schema.define(version: 20160324041912) do
     t.string   "cohort_number"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "weeks", force: :cascade do |t|
+    t.integer "week_number"
+    t.string  "title"
+    t.text    "intro"
+    t.string  "speakers"
+    t.text    "goal"
+    t.string  "themes"
+    t.text    "notes"
   end
 
   add_foreign_key "brands", "students"

@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     end
     resources :brands
     resources :pages
+    resources :weeks
 end
 
 # root route
