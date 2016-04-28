@@ -1,0 +1,9 @@
+.container
+  %h2
+    Weeks
+
+  - @weeks.each do |week|
+    %p
+    =week.goal
+    %p Themes
+    =week.themes
