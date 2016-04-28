@@ -1,0 +1,10 @@
+.container
+  .btn.btn-default= link_to "Add Resource", new_resource_path
+  .col-md-12
+    .container.text-center
+      %h1 Useful Links and Resources
+      .jumbotron
+        - @resources.each do |resource|
+          %h2
+            = "-- #{resource.topic}"
+            = link_to resrouces.url, resource

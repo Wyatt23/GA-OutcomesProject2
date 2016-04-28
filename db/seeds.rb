@@ -1,5 +1,6 @@
 Brand.destroy_all
 Student.destroy_all
+Assignment.destroy_all
 
 Student.create(first_name: 'Adrian', last_name: 'Wyatt',ga_focus:'WDI', cohort_number:'8')
 Student.create(first_name: 'Andrew', last_name: 'Smith',ga_focus:'WDI', cohort_number:'8')
@@ -43,3 +44,7 @@ Student.create(first_name: 'Ryan', last_name: 'Krolick',ga_focus:'WDI', cohort_n
 
 #  :week number :intro, :speakers, :goal, :themes, :materials, :assignments, :resources
 Week.create(week_number: '1', title: 'Week 1: Introduction to Outcomes & the DC Tech Community', intro: 'Who is the Outcomes Team and this community of DC techies? How are you going to land a job in a competitive market utilizing the talents you are about to embark on? What types of jobs exist that could be your next professional chapter? How can you best get involved in the most sought after community in DC? Join us as we introduce the DC Outcomes Team and how we are going to help you navigate the job search starting week 1! You will also meet some of the leading experts in the DC Tech Community who will share their Tips and Tricks! Come prepared with 3 burning questions you would love to know!', speakers: 'names', goal: 'Setting clear expectations around Outcomes, it’s mission, vision, and goals. You will understand how to qualify for Outcomes support, the 5 themes associated with success, and what is required to be a job seeker. Meet leading experts and learn how to acclimate to the DC tech community and get involved to best set your job search up for success! ', themes: 'Participating in the Community; Becoming a Thought Leader; Understanding the Landscape', notes: ' ')
+
+Assignment.create(title: 'Outcomes Prework', instructions: 'Complete the questionaire', due_date:(20161122), ga_focus: 'all')
+Assignment.create(title: 'WDI Assignment Example', instructions: 'Do this and this', due_date:(20171017), ga_focus:'WDI')
+Assignment.create(title: 'UX Assignment Example', instructions: 'Do this and that and this', due_date:(20171003), ga_focus: 'UXDI')

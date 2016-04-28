@@ -7,5 +7,6 @@
       .jumbotron
         - @students.group_by do |student|
           .btn.btn-default
-            =link_to "X", student_path(student), method: :delete
-            =link_to "#{student.last_name}, #{student.first_name}", student_path(student)
+            =link_to "#{student.last_name},#{student.first_name}",student_path(student)
+            .btn.btn-warning
+              =link_to "X", student_path(student),method: :delete
