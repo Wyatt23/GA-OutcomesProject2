@@ -1,5 +1,6 @@
 Brand.destroy_all
 Student.destroy_all
+Assignment.destroy_all
 
 Student.create(first_name: 'Adrian', last_name: 'Wyatt',ga_focus:'WDI', cohort_number:'8')
 Student.create(first_name: 'Andrew', last_name: 'Smith',ga_focus:'WDI', cohort_number:'8')
@@ -40,3 +41,5 @@ Student.create(first_name: 'Matt', last_name: 'Kerns',ga_focus:'WDI', cohort_num
 Student.create(first_name: 'Max', last_name: 'Milliank',ga_focus:'WDI', cohort_number:'8')
 Student.create(first_name: 'Nyron', last_name: 'Waite',ga_focus:'WDI', cohort_number:'8')
 Student.create(first_name: 'Ryan', last_name: 'Krolick',ga_focus:'WDI', cohort_number:'8')
+
+Assignment.create(title: 'Outcomes Prework', instructions: 'Complete the questionaire at https://drive.google.com/file/d/0B0cuNYi34jyuNUtzLXU5MUJpYmc/view', due_date:(2015, 6, 22),ga_focus: 'all')

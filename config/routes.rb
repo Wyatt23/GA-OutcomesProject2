@@ -10,11 +10,14 @@ Rails.application.routes.draw do
     get "pages/policy", :as=> 'policy'
     get "pages/prework", :as=> 'prework'
 
+    get "assignments/assignments_index", :as=> 'assignments_index'
+
     resources :students do
       resources :brands, :companies, :meetups
     end
     resources :brands
     resources :pages
+    resources :assignments
 end
 
 # root route
