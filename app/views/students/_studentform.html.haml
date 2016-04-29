@@ -5,7 +5,7 @@
         #errors
           %h2
             =pluralize(@student.errors.count, "error")
-            prevented this Curio from saving
+            prevented this student from saving
           %ul
             -@student.errors.full_messages.each do |msg|
               %li=msg
